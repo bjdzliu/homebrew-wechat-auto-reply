@@ -9,8 +9,15 @@ class WechatAutoReply < Formula
   depends_on "python@3"
 
   def install
+    # 打印调试信息
+    ohai "Current directory: #{Dir.pwd}"
+    ohai "Files present: #{Dir['*'].join(', ')}"
+    
     # 安装所有文件到 share 目录
-    (share/"openclaw/skills/wechat-auto-reply").install Dir["SKILL.md", "wechat-dm.applescript", "wechat-dm.sh"]
+    (share/"openclaw/skills/wechat-auto-reply").mkpath
+    (share/"openclaw/skills/wechat-auto-reply").install "SKILL.md"
+    (share/"openclaw/skills/wechat-auto-reply").install "wechat-dm.applescript"  
+    (share/"openclaw/skills/wechat-auto-reply").install "wechat-dm.sh"
 
     # 创建 bin 包装脚本
     (bin/"wechat-auto-reply").write <<~EOS
