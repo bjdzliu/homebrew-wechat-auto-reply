@@ -9,11 +9,14 @@ class WechatAutoReply < Formula
   depends_on "python@3"
 
   def install
-    # 安装 skill 本体到 brew prefix 下
+    # 安装所有文件到 share 目录
     (share/"openclaw/skills/wechat-auto-reply").install "SKILL.md", "wechat-dm.applescript", "wechat-dm.sh"
 
-    # 安装可执行脚本到 bin
-    bin.install "wechat-dm.sh" => "wechat-auto-reply"
+    # 创建 bin 包装脚本
+    (bin/"wechat-auto-reply").write <<~EOS
+      #!/bin/bash
+      exec "#{share}/openclaw/skills/wechat-auto-reply/wechat-dm.sh" "$@"
+    EOS
   end
 
   def post_install
