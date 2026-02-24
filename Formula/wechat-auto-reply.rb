@@ -2,7 +2,7 @@ class WechatAutoReply < Formula
   desc "OpenClaw skill: WeChat Auto Reply with AI-powered confidence scoring"
   homepage "https://github.com/bjdzliu/homebrew-openclaw"
   url "https://github.com/bjdzliu/homebrew-openclaw/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "PLACEHOLDER_WILL_UPDATE"
+  sha256 "807f79cb0fdba649b8e59f217133ef496399c2f7c35190edd4f5346766d1ac8e"
   license "MIT"
 
   depends_on "cliclick"
