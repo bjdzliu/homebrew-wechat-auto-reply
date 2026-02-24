@@ -1,20 +1,18 @@
-# Homebrew Tap for WeChat Auto Reply
+# Homebrew OpenClaw Tap
 
-OpenClaw skill: WeChat Auto Reply with AI-powered confidence scoring
+OpenClaw skills collection for Homebrew installation.
 
 ## 🚀 Quick Install
 
-### Method 1: One-line Install (Recommended for first-time users)
-
 ```bash
-brew install bjdzliu/wechat-auto-reply/wechat-auto-reply
+brew install bjdzliu/openclaw/wechat-auto-reply
 ```
 
-### Method 2: Tap First (Recommended for easier updates)
+Or use the two-step method:
 
 ```bash
 # Step 1: Add the tap
-brew tap bjdzliu/wechat-auto-reply
+brew tap bjdzliu/openclaw
 
 # Step 2: Install (shorter command)
 brew install wechat-auto-reply
@@ -22,6 +20,12 @@ brew install wechat-auto-reply
 # Future updates
 brew upgrade wechat-auto-reply
 ```
+
+## 📚 Available Skills
+
+### WeChat Auto Reply
+
+WeChat Auto Reply with AI-powered confidence scoring - semi-automatic message reply with intelligent confidence assessment.
 
 ## 📖 Usage
 
@@ -104,10 +108,10 @@ cliclick c:1000,832  # Change to your coordinates
 ## 🔄 Update
 
 ```bash
-# If you used Method 1
-brew upgrade bjdzliu/wechat-auto-reply/wechat-auto-reply
+# If you used one-line install
+brew upgrade bjdzliu/openclaw/wechat-auto-reply
 
-# If you used Method 2 (tap first)
+# If you added the tap first
 brew upgrade wechat-auto-reply
 ```
 
@@ -117,7 +121,7 @@ brew upgrade wechat-auto-reply
 brew uninstall wechat-auto-reply
 
 # Optional: Remove the tap
-brew untap bjdzliu/wechat-auto-reply
+brew untap bjdzliu/openclaw
 ```
 
 ## 📝 Documentation
@@ -130,5 +134,5 @@ MIT
 
 ## 🔗 Links
 
-- **Repository**: https://github.com/bjdzliu/homebrew-wechat-auto-reply
-- **Issues**: https://github.com/bjdzliu/homebrew-wechat-auto-reply/issues
+- **Repository**: https://github.com/bjdzliu/homebrew-openclaw
+- **Issues**: https://github.com/bjdzliu/homebrew-openclaw/issues
