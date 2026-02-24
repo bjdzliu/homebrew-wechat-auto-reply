@@ -34,7 +34,7 @@ class WechatAutoReply < Formula
     # 创建软链接到用户目录
     target = File.join(skills_root, "wechat-auto-reply")
     FileUtils.rm_rf(target)
-    FileUtils.ln_sf(share/"openclaw/skills/wechat-auto-reply", target)
+    FileUtils.ln_sf(opt_prefix/"share/openclaw/skills/wechat-auto-reply", target)
 
     # 提示用户安装 Python 依赖
     ohai "Installing Python dependencies..."
