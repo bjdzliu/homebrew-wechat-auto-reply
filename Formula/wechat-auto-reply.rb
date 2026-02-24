@@ -27,8 +27,8 @@ class WechatAutoReply < Formula
   end
 
   def post_install
-    # 创建 OpenClaw skills 目录
-    skills_root = File.expand_path("~/.openclaw/skills")
+    # 创建 OpenClaw workspace/skills 目录
+    skills_root = File.expand_path("~/.openclaw/workspace/skills")
     FileUtils.mkdir_p(skills_root)
 
     # 创建软链接到用户目录
@@ -49,7 +49,7 @@ class WechatAutoReply < Formula
         #{share}/openclaw/skills/wechat-auto-reply
 
       Linked to:
-        ~/.openclaw/skills/wechat-auto-reply
+        ~/.openclaw/workspace/skills/wechat-auto-reply
 
       Command available:
         wechat-auto-reply <contact_name> [message]

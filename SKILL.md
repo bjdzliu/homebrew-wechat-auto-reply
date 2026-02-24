@@ -46,7 +46,7 @@ wechat-auto-reply "联系人名称" "消息内容"
 
 ```bash
 # 进入 skill 目录
-cd ~/.openclaw/skills/wechat-auto-reply
+cd ~/.openclaw/workspace/skills/wechat-auto-reply
 
 # 半自动回复模式
 ./wechat-dm.sh "联系人名称"
@@ -78,14 +78,14 @@ wechat-auto-reply "小王" "今天行情怎么样"
 
 ### Homebrew 安装后
 - **Skill 目录**: `$(brew --prefix)/share/openclaw/skills/wechat-auto-reply`
-- **用户链接**: `~/.openclaw/skills/wechat-auto-reply`
+- **用户链接**: `~/.openclaw/workspace/skills/wechat-auto-reply`
 - **全局命令**: `$(brew --prefix)/bin/wechat-auto-reply`
-- **配置文件**: `~/.openclaw/skills/wechat-auto-reply/wechat-dm.applescript`
+- **配置文件**: `~/.openclaw/workspace/skills/wechat-auto-reply/wechat-dm.applescript`
 
 ### 查看安装路径
 ```bash
 which wechat-auto-reply
-ls -la ~/.openclaw/skills/wechat-auto-reply
+ls -la ~/.openclaw/workspace/skills/wechat-auto-reply
 ```
 
 ## 环境准备
@@ -189,7 +189,7 @@ theRequest.setUsesLanguageCorrection(True)
 找到配置文件位置：
 ```bash
 # Homebrew 安装
-vim ~/.openclaw/skills/wechat-auto-reply/wechat-dm.applescript
+vim ~/.openclaw/workspace/skills/wechat-auto-reply/wechat-dm.applescript
 
 # 或使用 brew 路径
 vim $(brew --prefix)/share/openclaw/skills/wechat-auto-reply/wechat-dm.applescript

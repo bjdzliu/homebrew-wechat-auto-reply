@@ -66,7 +66,7 @@ wechat-auto-reply "小王" "今天行情怎么样"
 ## 📂 File Locations
 
 - **Skill directory**: `$(brew --prefix)/share/openclaw/skills/wechat-auto-reply`
-- **User link**: `~/.openclaw/skills/wechat-auto-reply`
+- **User link**: `~/.openclaw/workspace/skills/wechat-auto-reply`
 - **Command**: `$(brew --prefix)/bin/wechat-auto-reply`
 
 ## ⚙️ Configuration
