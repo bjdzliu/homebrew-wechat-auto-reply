@@ -36,32 +36,36 @@ class WechatAutoReply < Formula
 
   def caveats
     <<~EOS
-      WeChat Auto Reply skill installed successfully!
+      ✅ WeChat Auto Reply installed successfully!
 
-      Skill directory:
-        #{share}/openclaw/skills/wechat-auto-reply
+      📦 Installation:
+        # Method 1: One-line install (full path)
+        brew install bjdzliu/wechat-auto-reply/wechat-auto-reply
 
-      Linked to:
-        ~/.openclaw/skills/wechat-auto-reply
+        # Method 2: Two-step install (shorter command)
+        brew tap bjdzliu/wechat-auto-reply
+        brew install wechat-auto-reply
 
-      Command available:
-        wechat-auto-reply <contact_name> [message]
-
-      Usage:
+      🚀 Usage:
         # Semi-auto reply (OCR + AI with confidence scoring)
         wechat-auto-reply "联系人名称"
 
         # Direct message
         wechat-auto-reply "联系人名称" "消息内容"
 
-      IMPORTANT:
-        - Requires macOS Automation permissions for WeChat
-        - Requires Python package: pyobjc (auto-installed)
-        - Requires cliclick (auto-installed as dependency)
-        - Default input box coordinates: {1000, 832}
+      📂 Locations:
+        Skill directory: #{share}/openclaw/skills/wechat-auto-reply
+        User link: ~/.openclaw/skills/wechat-auto-reply
+        Command: $(which wechat-auto-reply)
+
+      ⚠️  Requirements:
+        • macOS Automation permissions for WeChat
+        • Python package: pyobjc (auto-installed)
+        • cliclick (auto-installed as dependency)
+        • Default input box coordinates: {1000, 832}
           (modify in #{share}/openclaw/skills/wechat-auto-reply/wechat-dm.applescript if needed)
 
-      For more information, see:
+      📖 Documentation:
         #{share}/openclaw/skills/wechat-auto-reply/SKILL.md
     EOS
   end
